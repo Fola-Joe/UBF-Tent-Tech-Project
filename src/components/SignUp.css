@@ -5,12 +5,14 @@
     --deep-grey-light: hsla(235, 13%, 16%, 0.1);
     --deep-grey: hsl(235, 13%, 16%);
     --blue: hsl(208, 56%, 46%);
+    --light-grey: hsl(0, 0%, 47%);
+    --black-blue: hsl(235, 17%, 13%);
 }
 
-.SignUp {
+.SignUp, .SignIn {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin: 2.5rem auto 2.5rem;
+    margin: 2.5rem auto 2rem;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -33,8 +35,9 @@
     margin-bottom: 1rem;
 }
 .sign-up-sect h2 {
-    font-size: 1rem;
+    font-size: 0.85rem;
     margin-bottom: 2rem;
+    color: var(--light-grey);
 }
 .sign-up-form {
     text-align: left;
@@ -53,7 +56,7 @@
     font-size: 0.85rem;
     font-weight: 500;
 }
-.password {margin-bottom: 2rem;}
+.signUp-password {margin-bottom: 2rem;}
 .sign-up-btn {
     font-family: 'Poppins', sans-serif;
     width: 100%;
@@ -66,7 +69,7 @@
     cursor: pointer;
     transition: all 0.5s;
 }
-.google-sign-up {
+.google-sign-up, .google-sign-in {
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -76,16 +79,36 @@
     padding: 0.5rem 2.75rem;
     border-radius: 0.5rem;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--blue);
     cursor: pointer;
 }
-.google-sign-up img {width: 1.5rem;}
+.google-sign-in{padding: 0.5rem 2.1rem;}
+.google-sign-up img, .google-sign-in img {width: 1.5rem;}
 .switch-login {
     font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--deep-grey);
 }
 .switch-login span {
-    font-weight: 500;
     color: var(--blue);
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+.forgot-pword {
+    color: var(--blue);
+    text-decoration: underline;
     cursor: pointer;
 }
