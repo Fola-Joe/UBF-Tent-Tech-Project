@@ -1,18 +1,20 @@
 :root {
     --grey: hsl(223, 24%, 94%);
+    --grey-light: hsla(223, 24%, 94%, 0.5);
     --white: hsl(0, 0%, 100%);
-    --deep-grey: hsla(235, 13%, 16%, 0.1);
+    --deep-grey-light: hsla(235, 13%, 16%, 0.1);
+    --deep-grey: hsl(235, 13%, 16%);
+    --blue: hsl(208, 56%, 46%);
 }
 
 .SignUp {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin: auto;
+    margin: 2.5rem auto 2.5rem;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 320px;
-    margin-top: 2.5rem;
 }
 .logo {
     width: 6rem;
@@ -21,9 +23,9 @@
 }
 .sign-up-sect {
     padding: 2rem 1.5rem;
-    background-color: var(--grey);
+    background-color: var(--grey-light);
     border-radius: 0.7rem;
-    border: 2px solid var(--deep-grey);
+    border: 2px solid var(--deep-grey-light);
 }
 .sign-up-sect h1 {
     font-size: 1.2rem;
@@ -36,4 +38,54 @@
 }
 .sign-up-form {
     text-align: left;
+}
+.name-input, .email-input, .password-input {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    width: 90%;
+    padding: 0.75rem;
+    border: 2px solid var(--deep-grey-light);
+    outline: none;
+    border-radius: 0.5rem;
+    margin: 0.4rem 0 0.75rem;
+}
+.name-label, .email-label, .password-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.password {margin-bottom: 2rem;}
+.sign-up-btn {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.google-sign-up {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border: 2px solid var(--deep-grey-light);
+    margin-bottom: 1.5rem;
+    background-color: var(--white);
+    padding: 0.5rem 2.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--blue);
+    cursor: pointer;
+}
+.google-sign-up img {width: 1.5rem;}
+.switch-login {
+    font-size: 0.85rem;
+}
+.switch-login span {
+    font-weight: 500;
+    color: var(--blue);
+    cursor: pointer;
 }
