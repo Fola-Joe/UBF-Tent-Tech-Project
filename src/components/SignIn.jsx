@@ -1,4 +1,4 @@
-import './SignUp.css';
+import './Index.css';
 
 export default function SignIn() {
     const handleForm = (e) => {
